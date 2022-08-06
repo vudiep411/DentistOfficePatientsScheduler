@@ -12,20 +12,26 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useNavigate  } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = useState()
     const pages = ['Patients Data', 'SMS reminder'];
     const navigate = useNavigate()
+    const dispatch  = useDispatch()
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+    const logout = () => {
+      dispatch({type: 'LOGOUT'})
+      navigate('/login')
+    }
   return (
     <AppBar position="static" color='inherit' style={{marginBottom: '15px'}}>
-      <Container maxWidth="xl">
+      <Container style={{display: 'flex', justifyContent: 'space-between'}}>
         <Toolbar disableGutters>
           <CalendarMonthIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -141,6 +147,12 @@ const Navbar = () => {
             )}
           </Box>        
         </Toolbar>
+        <Button 
+        variant='text' 
+        size='small' 
+        color='error'
+        onClick={logout}
+        >Logout</Button>
       </Container>
     </AppBar>
   )

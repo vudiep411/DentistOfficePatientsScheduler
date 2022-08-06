@@ -5,6 +5,7 @@ import cors from 'cors'
 import appointmentRoutes from './Routes/appointment.js'
 import patientsRoutes from './Routes/patients.js'
 import sendTxtRoutes from './Routes/sendText.js'
+import userRoutes from './Routes/user.js'
 import dotenv from "dotenv"
 dotenv.config()
 
@@ -18,6 +19,7 @@ app.use(cors())
 app.use('/appointment', appointmentRoutes)
 app.use('/patients', patientsRoutes)
 app.use('/sendText', sendTxtRoutes) 
+app.use('/user', userRoutes)
 
 const PORT = process.env.PORT || 5000
 
