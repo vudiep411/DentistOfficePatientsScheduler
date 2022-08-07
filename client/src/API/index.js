@@ -1,6 +1,6 @@
 import axios from 'axios'
 // https://patientscheduler.herokuapp.com/
-const API = axios.create({baseURL: 'http://localhost:5000/'})
+const API = axios.create({baseURL: 'https://patientscheduler.herokuapp.com/'})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile'))
