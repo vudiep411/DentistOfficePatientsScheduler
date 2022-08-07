@@ -19,7 +19,7 @@ const PatientsDetails = () => {
     if(!patient) return null
     const appointments = patient.appointments
     if(!appointments) return null
-    //console.log(appointments)
+    console.log(appointments)
 
   return (
     <div>
@@ -33,7 +33,7 @@ const PatientsDetails = () => {
             {
                 appointments.map((app, i) => {
                     const formatStartDate = moment(app.startDate)
-                    const formatEndDate = moment(app.formatEndDate)
+                    const formatEndDate = moment(app.endDate)
                     return(
                         <div key={i}>
                             <Typography><b>id:</b> {i+1}</Typography>

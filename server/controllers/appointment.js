@@ -13,6 +13,7 @@ export const getAppointments = async (req, res) => {
 
 export const addAppointment = async (req, res) => {
     const { added } = req.body
+
     const appInfo = {
         name: added.name,
         id: mongoose.Types.ObjectId(),
