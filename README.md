@@ -18,9 +18,6 @@ A project inspired by my cousin who runs a dentist office but still uses pen and
 <img src="calendar.png" alt="img">
 
 <br/>
-<p>Visit the fully deployed project</p>
-<a href='https://quick-vids-app.vercel.app/'>Click here</a>
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
