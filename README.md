@@ -3,11 +3,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div>
-<h1 align="center">QuickVids</h1>
+<h1 align="center">Dentist Patient Scheduler</h1>
 
-  <p align="center" height="600">
-   A social media platform for people to post videos, follows, like and comment using next.js for front-end, node.js for back-end, and sanity for database
-    <br />
+<p align="center" height="600">
+A project inspired by my cousin who runs a dentist office but still uses pen and paper for scheduling appointments. This scheduler helps him schedule appointments for patients and save the data in mongodb. It also has an automated send an SMS reminder for patients using Twilio service
+<br />
  
 
 
