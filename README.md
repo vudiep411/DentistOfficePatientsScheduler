@@ -6,7 +6,6 @@
 <h1 align="center">Dentist Patient Scheduler</h1>
 
 <p align="center" height="600">
-A project inspired by my cousin who runs a dentist office but still uses pen and paper for scheduling appointments. This scheduler helps him schedule appointments for patients and save the data in mongodb. It also has an automated send an SMS reminder for patients using Twilio service
 <br />
  
 
